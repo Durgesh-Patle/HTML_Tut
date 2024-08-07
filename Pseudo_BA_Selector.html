@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and after Pseudo selector</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            background-color: black;
+            color: white;
+        }
+
+        header::before {
+            background: url("https://images.unsplash.com/photo-1564910443496-5fd2d76b47fa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8c291cmNlfGVufDB8fDB8fHww&auto=format&fit=crop&w=1000&q=60") no-repeat center center/cover;
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.5;
+
+        }
+
+        section {
+            height: 344px;
+            /* border: 2px solid red; */
+            align-items: center;
+            margin: 20px 23px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        /* section::after{
+            content: "This is a content";
+        } */
+        .navigation {
+            font-size: 20px;
+            display: flex;
+            /* flex-direction: column; */
+        }
+
+        li {
+            list-style: none;
+            padding: 34px 23px;
+        }
+
+        h1 {
+            font-size: 3rem;
+        }
+
+        p {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Service</li>
+                <li class="item">Contact us</li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h1>Welcome to Coding World</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et alias quidem nemo nulla explicabo fuga, non est
+            excepturi similique magni unde quo tempora quam provident ea porro autem assumenda perspiciatis nisi quas
+            maxime neque qui. Perferendis, illo neque modi consectetur alias officiis maxime eum. Tempore voluptas
+            maiores iusto minus nulla Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis est, saepe,
+            alias unde corrupti esse non similique quod aliquid illo deleniti assumenda nesciunt ipsam, rem quaerat
+            atque dolor nulla quo quibusdam debitis accusamus iste. Cum, placeat animi. Atque, saepe recusandae, eaque
+            maxime vitae, accusantium sit maiores quae quo quos tempora.</p>
+
+    </section>
+    <hr>
+
+</body>
+
+</html>

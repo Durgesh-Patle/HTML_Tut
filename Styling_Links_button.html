@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo selectors & more desining</title>
+    <style>
+        .container{
+            border: 2px solid red;
+            background-color: rgb(223, 245, 201);
+            padding: 34px;
+            margin: 34px;
+            width: 666px auto;
+        }
+        .btn{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background-color: crimson;
+            padding: 6px;
+            border: none;
+            cursor: pointer ;
+            font-size: 13px;
+            border-radius: 4px;
+        }
+        .btn:hover{
+            color: #c0dbdb;
+            background-color:rgb(223, 245, 201);
+            border: 2px solid black;
+        }
+        a:visited{
+            color: yellow;
+
+        }
+        a:active{
+            background-color: darkblue;
+        }
+        a{ 
+            /* Read more to bottom to a  remove underline */
+            text-decoration: none;
+            color: black;
+        }
+        a:hover{
+            color: rgb(68,3,3);
+            background-color: #fff;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container" id="cont1">
+        <h3>This is my Hadding</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates dolores ea placeat numquam incidunt, voluptate ducimus doloribus libero reprehenderit expedita modi optio ab dicta sint debitis voluptatem repudiandae! Culpa est in labore cumque magni magnam quia error, quidem id vel sed ratione eum nulla explicabo fuga? Dolore quod facere obcaecati?</p>
+        <a href="https://www.google.com" target="_blank" class="btn">Read More</a>
+        <button class="btn">Contact us</button>
+    </div>
+    
+</body>
+</html>

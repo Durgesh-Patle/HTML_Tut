@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar.com</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid red;
+            margin-left: 250px;
+            margin-right: 250px;
+            margin-top: 150px;
+            border-radius: 30px;
+            background-color: blanchedalmond;
+        }
+        img{
+            cursor: pointer;
+            border: 0.2px solid red;
+            border-radius: 40px;
+            height: 50px;
+            width: 50px;
+            /* background-color: yellow; */
+        }
+        img:hover{
+            transform-origin: top left;
+            animation: aaru 4s forwards;
+            color: rgb(248, 146, 21);
+        }
+        .icons{
+            padding: 8px 62px;
+        }
+        @keyframes aaru {
+            15%{
+                transform: rotate(60deg);
+            }
+            100%{
+                transform: rotate(60deg);
+            }
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="icons"><img src="Home image.png" alt="Home image"></div>
+        <div class="icons"><img src="Shopping image.png" alt="shopping image"></div>
+        <div class="icons"><img src="bell image.jpg" alt="Bell image"></div>
+        <div class="icons"><img src="user icon.png" alt="User icon"></div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loder.com</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            height: 585px;
+            width:100%;
+            border: 1px solid red;
+            border-radius: 10px;
+            background-color: #f8abab;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            border: 2px solid red;
+            border-radius: 10px;
+            width: 200px;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #8e8181;
+
+        }
+        .loder{
+            border: 8px solid red;
+            border-radius: 50%;
+            height: 100px;
+            width: 100px;
+            border-right-color: transparent;
+            border-top-color:greenyellow;
+            border-left-color: green;
+            border-bottom-color: #000;
+            animation:rotade 0.8s infinite;
+        }
+        @keyframes rotade {
+            100%{
+                rotate:360deg;
+            }
+            
+        }
+        .loder:hover{
+            animation:rotade 0.1s infinite;
+            transform: rotate(360deg);
+            /* background-color: blanchedalmond; */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="loder"></div>
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- . is denoted to a class and # is denoted a id. -->
+    <!-- . is id=only one.(unick number.) -->
+    <!-- # is class=multyple face. -->
+
+    <title>CSS Selector</title>
+    <!-- internal css -->
+    <style>
+        /*1. id selector. */
+        #firstpra{
+            color:green;
+        }
+
+        /*2. class selector */
+        .secoundpra{
+            color:red;
+        }
+        #redelement{
+            color:white;
+            background: #e51919;
+        }
+
+        /*3. grouping selector */
+        footer,span{
+            color:white;
+            background: rgb(14, 175, 187);
+        }
+
+        /*4. Elements selector */
+        p{
+            border:2px solid black;
+        }   
+    </style>
+</head>
+<body>
+    <h3>CSS Setector.</h3>
+    <p id="firstpra">This is a yet another pragraph to demostreate css selector.</p>
+    <p class="secoundpra">This is a simple pragraph to demostreate css selector.</p>
+    <p id="redelement">This is a another pragraph to demostreate css selector.</p>
+    <div>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum, tempore.</p>
+    </div>
+
+    <footer>This is footer.</footer>
+    <br>
+    <span>This is span.</span>
+    
+</body>
+</html>

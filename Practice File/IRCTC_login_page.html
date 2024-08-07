@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IRCTC.com</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+
+        body{
+            background-image: url(train\ image1.jpg);
+            background-position: center;
+            background-size: cover;
+            /* background-attachment: fixed; */
+            height: 100vh;
+            width: auto;
+            margin: 0;
+            padding: 0;
+            /* position: fixed; */
+            opacity: 1px;
+            z-index: -1;
+        }
+
+        .container {
+            background-color: #fff;
+        }
+
+        .image1 {
+            cursor: pointer;
+            /* border: 1px solid red; */
+            /* border-radius: 39px; */
+            margin-top: 16px;
+            margin-left: 5px;
+
+        }
+
+        .image2 {
+            cursor: pointer;
+            background-color: white;
+            margin-top: 10px;
+            margin-right: 15px;
+            float: right;
+        }
+
+        .box {
+            /* border: 1px solid red; */
+            background-color: white;
+            padding: 9px 0px;
+            width: 56rem;
+            margin-left: 150px;
+            margin-top: -90px;
+        }
+
+        .items {
+            /* border: 1px solid red; */
+            font-weight: bold;
+            cursor: pointer;
+            margin: 0px 18px;
+            background-color: white;
+        }
+
+        .items:hover {
+            background-color: rgb(51, 51, 218);
+        }
+
+        .items:active {
+            background-color: rgb(51, 51, 218);
+        }
+
+        .image3 {
+            /* margin-top: 5px; */
+            width: 20px;
+            height: 20px;
+        }
+
+        .box1 {
+            background-color: white;
+            /* border: 1px solid red; */
+            padding: 9px 0px;
+            width: 58rem;
+            margin-left: 190px;
+            /* margin-top: 11px; */
+            margin-top: 2px;
+        }
+
+        .items1 {
+            cursor: pointer;
+            margin: 5px;
+            margin: 3px;
+            margin-left: 4px;
+            font-weight: bold;
+        }
+
+        .items1:hover {
+            background-color: rgb(51, 51, 218);
+        }
+
+        form {
+            background-color: white;
+            /* background: transparent; */
+            border-radius: 8px;
+            border: 2px solid;
+            margin-top: 21px;
+            margin-left: 45px;
+            width: 50%;
+            height: 510px;
+            box-shadow: 2px 2px 10px black;
+        }
+
+        .book_ticket {
+            display: flex;
+            /* margin: 5px; */
+        }
+
+        button {
+            cursor: pointer;
+            padding: 11px 96px;
+            margin: 1px;
+            margin-top: 0px;
+            background-color: navy;
+            color: white;
+        }
+
+        .image5 {
+            margin: 5px;
+        }
+
+        h1 {
+            margin: 5px;
+            color: navy;
+        }
+
+        #G20_Logo {
+            margin-left: 25px;
+            margin-top: 20px;
+        }
+
+        .date {
+            float: right;
+        }
+
+        .select2 {
+            float: right;
+        }
+
+        h3 {
+            /* border: 1px solid red; */
+            width: 20%;
+            text-align: center;
+            margin-left: 63px;
+            margin-top: 15px;
+
+        }
+
+        .input {
+            /* padding: 0px 15px;
+            margin: 22px 7px; */
+            margin: -3px 7px;
+        }
+
+        #from2 {
+            padding: 12px 34px;
+            margin-top: 16px;
+            padding-left: 8px;
+            font-weight: bold;
+        }
+
+        #date2 {
+            padding: 9px 49px;
+            margin-right: 40px;
+        }
+
+        #to2 {
+            padding: 12px 34px;
+            padding-left: 8px;
+            font-weight: bold;
+
+        }
+
+        .select1 {
+            margin: 12px 34px;
+            /* padding: 12px 34px; */
+        }
+
+        .select {
+            padding: 12px;
+            margin-left: -20px;
+            margin-top: 21px;
+        }
+
+        .option1 {
+            padding: 12px 19px;
+        }
+
+        #select4 {
+            margin: -72px 5px;
+        }
+
+        select#select4 {
+            margin-top: 55px;
+            padding: 10px 20px;
+            margin-right: 36px;
+        }
+
+        .cheak {
+            cursor: pointer;
+            margin: 15px;
+        }
+
+        .cheakbox {
+            /* border: 1px solid red; */
+            margin-left: 2px;
+        }
+
+        .cheakbox1 {
+            /* border: 1px solid green; */
+            margin-left: 40px;
+        }
+
+        .btn3 {
+            float: right;
+            border: 1px solid #01bb0a;
+            background-color: #01bb0a;
+            border-radius: 8px;
+            padding: 12px 71px;
+            margin-top: 3px;
+            margin-right: 21px;
+            font-weight: bold;
+        }
+
+        .btn3:hover {
+            background-color: #a8d818;
+        }
+
+        .btn2:hover {
+            background-color: #a8d818;
+        }
+
+        .btn2 {
+            border: 1px solid #fb792b;
+            background-color: #fb792b;
+            border-radius: 8px;
+            margin: 3px 14px;
+            padding: 11px 74px;
+            font-weight: bold;
+        }
+
+        .railway {
+            float: right;
+            /* border: 2px solid red; */
+            /* background-color: #fff; */
+            color: black;
+            margin-top: -500px;
+            margin-right: 93px;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        h4 {
+            margin: 14px 14px;
+            padding: 10px 16px;
+        }
+    </style>
+</head>
+
+<body>
+        <div class="container">
+            <div class="left_image">
+                <img src="left logo irctc.png" alt="image" class="image1">
+                <img src="right logo irctc.png" alt="image2" class="image2">
+            </div>
+            <div class="box">
+                <span class="items">LOGIN</span>
+                <span class="items">REGISTER</span>
+                <span class="items">AGENT LOGIN</span>
+                <span class="items">CONTACT US</span>
+                <span class="items">ASK DISHA</span>
+                <span class="items">09-SEP-23</span>
+                <span class="items">Langu[Hindi]</span>
+            </div>
+            <div class="box1">
+                <span class="items1"><img src="Home image.png" alt="image3" class="image3"></span>
+                <span class="items1">IRCTC EXCLUSIVE</span>
+                <span class="items1">TRAINS</span>
+                <span class="items1">BUSES</span>
+                <span class="items1">FLIGHTS</span>
+                <span class="items1">HOTELS</span>
+                <span class="items1">HOLIDAYS</span>
+                <span class="items1">LOTALITY</span>
+                <span class="items1">MEALS</span>
+                <span class="items1">PROMOTIONS</span>
+                <span class="items1">MORE</span>
+            </div>
+        </div>
+
+    <form action="#">
+        <div class="btn1">
+            <span><button>PNR STATUS</button></span>
+            <span><button>CHARTS/VACANCY</button></span>
+        </div>
+        <div class="book_ticket">
+            <img src="75 aajadi.jpg" alt="75 aajadi image" class="image5" id="Aajadii">
+            <h1>BOOK TICKET</h1>
+            <img src="G20_Logo.png" alt="G20_Logo" class="image5" id="G20_Logo">
+        </div>
+        <div class="input">
+            <input type="text" placeholder="From" class="input" id="from2">
+            <div class="date">
+                DD/MM/YYYY<br> <input type="date" class="input" id="date2">
+            </div>
+            <div class="select2">
+                <select name="Classes" id="select4">
+                    <option value="Classes" selected class="option1">All Classes</option>
+                    <option value="Classes" class="option1">Anubhuti Class(EA)</option>
+                    <option value="Classes" class="option1">AC First Class</option>
+                    <option value="Classes" class="option1">Vistadone (EV)</option>
+                    <option value="Classes" class="option1">Exec. Chair Car(EC)</option>
+                    <option value="Classes" class="option1">AC 2 Tier</option>
+                    <option value="Classes" class="option1">First Class(FC)</option>
+                    <option value="Classes" class="option1">AC 3 Tier (3A)</option>
+                    <option value="Classes" class="option1">AC 3 Economy (3E)</option>
+                    <option value="Classes" class="option1">Visradome Chair Car (VC)</option>
+                    <option value="Classes" class="option1">AC Chair Car (CC)</option>
+                    <option value="Classes" class="option1">Sleeper (SL)</option>
+                    <option value="Classes" class="option1">Vistadome None Ac (VC)</option>
+                    <option value="Classes" class="option1">Secound Sitting (2S)</option>
+                </select>
+            </div>
+            <h3>||</h3>
+            <br>
+            <input type="text" placeholder="To" class="input" id="to2"> <br>
+
+        </div>
+        <div class="select1">
+            <select name="GENERAL" id="select" class="select">
+                <option value="train" selected class="select">GENERAL</option>
+                <option value="train" class="select">LADIES</option>
+                <option value="train" class="select">LOWER BERTH/SR.CITIZEN</option>
+                <option value="train" class="select">PERSON WITH DISABILITY</option>
+                <option value="train" class="select">TATKAL</option>
+                <option value="train" class="select">PREMIUM TATKAL</option>
+            </select>
+        </div>
+        <div class="cheak">
+            <span class="cheakbox"> <input type="checkbox"> Person With Diability Concession </span>
+            <span class="cheakbox1"><input type="checkbox"> Flexible With Date</span>
+        </div>
+        <div class="cheak">
+            <span class="cheakbox"><input type="checkbox"> Train With Available Berth </span>
+            <span class="cheakbox1"><input type="checkbox"> Railaw Pass Concession</span>
+        </div>
+
+        <span><button class="btn2">Search</button></span>
+        <span><button class="btn3">Try booking in Ask DISHA 2.0</button></span>
+
+    </form>
+    <div class="railway">
+        <h2>INDIAN RAILWAYS</h2>
+        <h4>Safety|Security|Punctuality</h4>
+    </div>
+</body>
+
+</html>

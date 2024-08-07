@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+            background-color: #c5c2c2;
+            display: flex;
+            position: relative;
+        }
+        .box{
+            width:95%;
+            height: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            margin-top: 50px;
+            border-radius: 8px;
+            gap: 50px;
+            font-size: 15px;
+            font-weight: 500;
+            /* background: transparent; */
+            color: #0c0c0cc8;
+            cursor: pointer;
+            padding: 10px;
+            /* border: 2px solid red; */
+            box-shadow:inset 0 0 20px rgba(0,0,0,0.8);
+            user-select: none;
+        }
+        h2{
+            width: 150px;
+            height: 40px;
+            border: 0.1px solid grey;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* animation: 1s ease-in-out infinite; */
+            /* filter: drop-shadow(10px 10px 20px rgba(4, 233, 96, 0.995)); */
+            padding: 1px 20px;
+            font-weight: 900;
+            font-style: oblique;
+        }
+        h2:hover{
+            color: #fff;
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h2>Home</h2>
+            <h2>About us</h2>
+            <h2>Skills</h2>
+            <h2>Contact us</h2>
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>button anamation.com</title>
+    <style>
+        .box {
+            border: 1px solid red;
+            border-radius: 10px;
+            background-color: rgb(225, 217, 217);
+            height: 200px;
+            width: 200px;
+            /* margin: auto; */
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 5px 5px 0px green, -5px -5px 0px green;
+        }
+
+        button {
+            padding: 12px 25px;
+            background-color: red;
+            border-radius: 8px;
+            color: white;
+
+        }
+
+        button:hover {
+            box-shadow: 5px 5px 0px black;
+            color: blueviolet;
+        }
+
+        /* h2{
+            text-align: center;
+        } */
+        .box1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 300px;
+            width: 300px;
+            border: 1px solid red;
+            border-radius: 10px;
+            overflow: hidden;
+            /* margin: auto; */
+        }
+
+        img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            object-fit: cover;
+            width: 300px;
+            height: 300px;
+        }
+
+        .box1:hover {
+            box-shadow: 10px 10px 20px black,
+                -10px -10px 20px black;
+        }
+
+        img {
+            filter: drop-shadow(10px 10px 20px black);
+        }
+
+        img:hover {
+            filter: drop-shadow(10px 10px 20px black);
+
+        }
+
+        .img1 {
+            border: 1px solid red;
+            border-radius: 10px;
+            height: 300px;
+            width: 300px;
+        }
+        .Traingle{
+            /* border: 1px solid red; */
+            border-left: 60px solid transparent;
+            border-right: 60px solid transparent;
+            border-bottom: 100px solid red;
+            height:0;
+            width: 0;
+        }
+
+        body::-webkit-scrollbar {
+            background-color: transparent;
+        }
+
+        body::-webkit-scrollbar-thumb {
+            background: linear-gradient(red, green, black);
+            border-radius: 20px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h2>1. Button Animation.</h2>
+    <div class="box">
+        <button>Explore Now</button>
+    </div>
+    <h2>2. image shadow.</h2>
+    <div class="box1">
+        <img src="sujuka image.png" alt="">
+    </div>
+
+    <h2>3. image border</h2>
+    <div class="box3">
+        <img src="Durgesh.jpg" alt="" class="img1">
+    </div>
+
+    <h2>4.Box To A Traingle.</h2>
+    <div class="Traingle">
+
+    </div>
+
+</body>
+
+</html>

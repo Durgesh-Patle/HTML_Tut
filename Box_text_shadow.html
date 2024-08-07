@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box & text shadow</title>
+    <style>
+        .container {
+            display: flex;
+        }
+
+        .card {
+            padding: 23px 12px;
+            /* border: 2px solid red; */
+            margin: 23px 12px;
+            background-color: beige;
+            /* background: linear-gradient(beige yellow); */
+
+            /* syntax:- 1.box-shadow: offset-x offset-y color; */
+
+            /* bottom to a shadow */
+            /* box-shadow: 10px 13px green; */
+
+            /* uper to a shadow */
+            /* box-shadow: -10px -13px green; */
+
+
+            /* syntax:- 2.box-shadow: offset-x offset-y  blur-radius color; */
+
+            /* blour to a shadow */
+            /* box-shadow: 7px 5px 10px green; */
+            /* box-shadow: -7px -5px 10px green; */
+
+
+            /* syntax:- 2.box-shadow: offset-x offset-y  blur-radius spred-radius color; */
+            /* box-shadow: -7px -5px 10px 24px green; */
+
+
+            /* box-shadow: -7px -5px 10px 24px rgba(71, 172, 172, 0.5); */
+
+            /* box-shadow: inset 3px 5px green; */
+
+            /* multyple box-shadow */
+            box-shadow: 3px 5px green, 4px 6px red;
+
+        }
+
+        .card h2 {
+            /* text-shadow:3px 4px red; */
+            text-shadow: 10px 15px 15px red;
+            /* text-shadow: 10px 15px 15px white; */
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card" id="car-1">
+            <h2>This is c++ cource</h2>
+            <p> I have started c++ cource which does not mean that we will stop this cource we will containue ths cource
+                to complation.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta minima rem quis obcaecati
+                qui illo dignissimos provident odio. Ipsam eius asperiores, debitis temporibus at facere harum minima
+                molestiae consequatur, accusamus, recusandae quidem unde! Dolor nulla quia modi ex obcaecati quam rem
+                est reiciendis harum assumenda.</p>
+        </div>
+        <div class="card" id="car-2">
+            <h2>This is Html cource</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi ducimus laborum corporis nemo, natus
+                cum obcaecati quis exercitationem quam in similique porro nisi iste, aperiam illum iusto animi id veniam
+                praesentium? Enim placeat ipsum ipsa dolores, voluptate, vitae unde consectetur, eaque quasi fugiat
+                excepturi mollitia!</p>
+        </div>
+        <div class="card" id="car-3">
+            <h2>Card3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto omnis maiores cumque corrupti vel delectus
+                ipsum minima rem accusamus? Architecto eius, unde corrupti facilis error facere? Officia totam dolorum
+                vitae iste ipsa placeat vel necessitatibus, aut, quas earum veritatis adipisci? Quos sapiente nostrum
+                voluptates dolor!</p>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login.com</title>
+    <style>
+        body{
+            background: url(bgc\ image2.webp) no-repeat center center/cover;
+            opacity:5;
+            /* z-index: -1; */
+        }
+
+        .leftpart {
+            margin-top: 12px;
+            margin-left: 10px;
+            /* border: 2px solid red; */
+            display: inline-block;
+        }
+
+        .img {
+            width: 40px;
+            border: 1px solid red;
+            border-radius: 30px;
+        }
+
+        strong {
+            color: white;
+            margin-top: 10px;
+            margin-left: 12px;
+            font-style: italic;
+            font-size: 20px;
+            float: right;
+        }
+
+        .rightpart {
+            /* height: 12px; */
+            float: right;
+            border-right-color: antiquewhite;
+
+        }
+
+        .rightpart ul {
+            overflow: auto;
+        }
+
+        .rightpart ul li {
+            /* border: 2px solid red; */
+            list-style: none;
+            list-style: none;
+            padding: 23px 34px;
+            float: right;
+            border-radius: 12px;
+        }
+        .rightpart ul li:hover{
+
+            /* background-color: rgb(223, 217, 209); */
+            background-color: rgb(28, 18, 4);
+        }
+        .rightpart ul li a {
+            text-decoration: none;
+            color: white;
+
+        }
+
+        .login {
+            border: 1px solid red;
+            text-align: center;
+            margin-left: 5%;
+            margin-right: 60%;
+            margin-top: 10%;
+            height: 400px;
+            border-radius: 15px;
+        }
+
+        input {
+            margin: 12px 63px;
+            padding: 7px 39px;
+            border-radius: 12px;
+        }
+
+        .btn1{
+            background-color: green;
+            margin: 12px 63px;
+            padding: 7px 42px;
+            border-radius: 12px;
+            color: white;
+        }
+        .btn2{
+            color: white;
+            margin: 12px 63px;
+            padding: 7px 74px;
+            border-radius: 12px;
+            background-color: rgb(221, 55, 130);
+        }
+        .jsimg{
+            width: 60px;
+            height: 60px;
+            border: 1px solid red;
+            border-radius: 40px;
+        }
+        h4{
+            color: royalblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="leftpart">
+        <img src="key image.jpg" alt="key img" class="img">
+        <strong>Key</strong>
+    </div>
+    <nav class="rightpart">
+        <ul>
+            <li><a href="">Contact</a></li>
+            <li><a href="">Register</a></li>
+            <li><a href="">About Us</a></li>
+            <li> <a href="">Sign Up</a></li>
+        </ul>
+    </nav>
+    <form action="backend.html" class="login">
+        <img src="images (1).png" alt="img"  class="jsimg">
+        <div class="user">
+            <input type="text" placeholder="username">
+        </div>
+        <div class="pass">
+            <input type="password" placeholder="Password">
+        </div>
+        <button class="btn1">log in</button>
+        <h4>forget Password?</h4>
+        <div>
+            <button class="btn2">CREATE ACCOUNT</button>
+        </div>
+    </form>
+</body>
+
+</html>
